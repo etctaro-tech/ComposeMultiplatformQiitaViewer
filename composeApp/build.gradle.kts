@@ -1,4 +1,3 @@
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.compose.ExperimentalComposeLibrary
 
 plugins {
@@ -7,6 +6,9 @@ plugins {
     alias(libs.plugins.jetbrainsCompose)
 
     alias(libs.plugins.serialization)
+
+    id("io.realm.kotlin") version "1.11.0"
+
 }
 
 kotlin {
@@ -56,6 +58,10 @@ kotlin {
 
             // WebView
             api(libs.compose.webview.multiplatform)
+
+            // realm
+            implementation(libs.realm.library.base)
+            implementation(libs.realm.library.sync) // If using Device Sync
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
