@@ -1,14 +1,17 @@
+import io.realm.kotlin.types.RealmObject
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class QiitaArticle (
+class QiitaArticle (
     @SerialName("id")
-    val id: String,
+    var id: String = "",
 
     @SerialName("title")
-    val title: String,
+    var title: String = "",
 
     @SerialName("url")
-    val url: String
-)
+    var url: String = ""
+) : RealmObject {
+    constructor() : this("")
+}

@@ -35,15 +35,15 @@ Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-mu
 - iOS 16のシミュレータ
 
 ## 開発環境
-- Android Studio Hedgehog RC2
-  - Kotlin Multiplatformプラグイン 0.8.0
+- Android Studio Hedgehog
+  - Kotlin Multiplatformプラグイン 0.8.1
 - Kotlin 1.9.20
 - Compose 1.5.x
 - Xcode 14.3.1
 
 ## 注意点
 - ひとまずCompose Multiplatformでアプリを作るには、ということを示すためのサンプルです。
-- エラー処理は特にしていません。(今後記事の中で触れます。)
+- エラー処理は最低限です。(記事の中で軽く触れています。)
 - テストは書いていないです。(今後記事の中で触れるかもしれません。)
 
 ## その他
